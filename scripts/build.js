@@ -37,6 +37,8 @@ export interface PptMasterConfig {
   autoPull?: boolean
   /** Clone on activation when the checkout is missing. Default true. */
   cloneOnInstall?: boolean
+  /** Shallow clone/fetch (--depth 1). Default true. */
+  shallow?: boolean
 }
 
 export function apply(ctx: unknown, config?: PptMasterConfig): void

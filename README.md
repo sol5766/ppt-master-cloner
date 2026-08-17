@@ -28,6 +28,7 @@ dsh plugin --profile web add <本仓库 git 地址或本地路径>
 | `checkIntervalMs` | `21600000` (6h) | 自动更新检查间隔;`0` 关闭 |
 | `autoPull` | `true` | 检测到更新时自动 fast-forward;`false` 只报告不拉取 |
 | `cloneOnInstall` | `true` | 激活时是否自动 clone;`false` 仅初始化 |
+| `shallow` | `true` | 浅克隆/浅 fetch(`--depth 1`),首次安装快;`false` 全量克隆 |
 
 示例(patch 层):
 

@@ -1,0 +1,9 @@
+# dsh-ppt-master bundle patch: registers the host plugin that keeps the
+# ppt-master project installed and up to date from GitHub.
+#
+# Install the bundle with:
+#   dsh plugin --profile <name> add <path-or-git-url>
+# The row below then joins the host composition on the next boot.
+- insert:
+    - id: ppt-master-updater
+      name: dsh-ppt-master
